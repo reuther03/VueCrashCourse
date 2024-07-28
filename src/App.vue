@@ -1,35 +1,3 @@
-<script>
-import { ref } from 'vue';
-export default {
-  setup(){
-    const name = ref('Joe Doe')
-    const status = ref('active')
-    const tasks = ref(['task1', 'task2', 'task3'])
-
-    const toggleStatus = () => {
-      if (status.value === "active") {
-        status.value = "inactive";
-      } else {
-        status.value = "active";
-      }
-    }
-
-    return { name, status, tasks, toggleStatus };
-
-  },
-};
-</script>
-
 <template>
-  <p v-if="status === 'active'">{{name}}, {{status}}</p>
-  <p v-else-if="status === 'inactive'">{{status}}</p>
-  <p v-else>internalservererror, {{status}}</p>
-
-  <h3>Tasks:</h3>
-  <ul>
-    <li v-for="task in tasks" :key="task">{{task}}</li>
-  </ul>
-<!--  <a v-bind:href="link">google</a>-->
-<!--  <button v-on:click="toggleStatus">Change Status</button>-->
-  <button @click="toggleStatus">Change Status</button>
+  
 </template>
