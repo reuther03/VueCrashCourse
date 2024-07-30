@@ -1,4 +1,4 @@
-﻿<script setup lang="ts">
+﻿<script setup>
 
 import HomeCards from "@/components/HomeCards.vue";
 import Hero from "@/components/Hero.vue";
